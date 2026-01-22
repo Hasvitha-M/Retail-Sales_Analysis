@@ -3,7 +3,7 @@
 ## Project Overview
 This project performs a structured analysis of retail sales data using Python and Pandas.  
 The goal is to clean raw data, perform customer-level analysis, visualize key trends, and export final datasets for reporting and dashboards.
-The entire workflow is implemented in a Jupyter Notebook
+The entire workflow is implemented in a Jupyter Notebook ('retail_analysis.ipynb').
 
 ## Objectives
 - Clean and prepare raw retail transaction data.
@@ -88,7 +88,7 @@ The final step exports two CSV files:
 
 These files can be reused for Excel dashboards and reporting.
 
-##Key Insights
+## Key Insights
 
 - A small percentage of customers contribute a significant portion of total revenue.
 - Customers who responded to campaigns generally spend more.
@@ -118,3 +118,4 @@ It showcases practical data analytics skills using Python and Pandas.
 
 ## License
 This project is created for educational and learning purposes.
+
