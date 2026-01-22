@@ -17,8 +17,7 @@ The entire workflow is implemented in a Jupyter Notebook ('retail_analysis.ipynb
 **Source:** Kaggle Retail Dataset
 
 ## Files Used
-
-###Input Files
+### Input Files
 - `Retail_Data_Transactions.csv`
   - `customer_id`
   - `trans_date`
@@ -118,4 +117,5 @@ It showcases practical data analytics skills using Python and Pandas.
 
 ## License
 This project is created for educational and learning purposes.
+
 
