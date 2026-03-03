@@ -112,10 +112,11 @@ Retail_Customer_Analysis.csv
 ## Conclusion
 This project demonstrates an end-to-end data analysis pipeline:
 - Raw data → cleaned data → analysis → visualization → export  
-It showcases practical data analytics skills using Python and Pandas.
+It showcases practical data analytics using Python and Pandas.
 
 
 ## License
 This project is created for educational and learning purposes.
+
 
 
