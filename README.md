@@ -1,9 +1,9 @@
 # Retail Sales Data Analysis
 
 ## Project Overview
-This project performs a structured analysis of retail sales data using Python and Pandas.  
-The goal is to clean raw data, perform customer-level analysis, visualize key trends, and export final datasets for reporting and dashboards.
-The entire workflow is implemented in a Jupyter Notebook ('retail_analysis.ipynb').
+This project analyzes 125K+ retail transactions and 6.8K marketing campaign responses to understand customer purchasing behavior, revenue trends, and campaign effectiveness.
+
+The analysis combines Python, SQL, and Power BI to clean, process, and visualize retail sales data, enabling insights into customer segmentation and marketing performance.
 
 ## Objectives
 - Clean and prepare raw retail transaction data.
@@ -22,6 +22,7 @@ The entire workflow is implemented in a Jupyter Notebook ('retail_analysis.ipynb
   - `customer_id`
   - `trans_date`
   - `tran_amount`
+Contains 125,000+ transaction records representing customer purchases.
 
 - `Retail_Data_Response.csv`
   - `customer_id`
@@ -34,80 +35,67 @@ The entire workflow is implemented in a Jupyter Notebook ('retail_analysis.ipynb
 - Pandas
 - Matplotlib
 - Jupyter Notebook
+- SQL
+- Power BI
 
-## Project Workflow
 
-### 1.Data Loading
-- Loaded transaction and response datasets using Pandas
-- Verified structure and data types using `.head()` and `.info()`
+## Data Processing (Python)
 
-### 2.Data Cleaning
-- Removed invalid or zero transaction amounts
-- Ensured consistent data types for analysis
-- Handled missing response values after merging
+The dataset was cleaned and processed using Python (Pandas).
 
-### 3.Data Preparation
-- Converted transaction date to datetime format
-- Created derived columns:
-  - `year`
-  - `month`
-- Merged transaction data with response data using `customer_id`
+Key steps performed:
+- Removed invalid transactions
+- Converted transaction dates to datetime format
+- Extracted year and month features
+- Integrated transaction and campaign response data
+- Calculated customer-level metrics for analysis
 
-### 4.Customer-Level Analysis
-Created a separate analysis dataframe with:
-- Total spending per customer
-- Number of transactions
-- Average transaction value
-- Customer response status
+## SQL Analysis
 
-### 5.Customer Segmentation
-Customers were segmented based on total spending:
-- Low Value
-- Medium Value
-- High Value
+SQL queries were used to analyze customer transactions and campaign performance.
+- Database Setup
+- Total Number of Transactions
+- Total Revenue
+- Average Transaction Value
+- Top 10 Customers by Spending
+- Customer Transaction Frequency
+- Response Distribution
+- Average Spending by Response
+- Total Revenue by Response
+- High Value Customers
 
-### 6.Exploratory Data Analysis & Visualization
-The notebook includes visualizations for:
-- Monthly sales trends
-- Revenue comparison by response
-- Average transaction value by response
-- Customer segment distribution
-- Top 10 customers by total spending
+## Power BI Dashboard
 
-These visualizations help identify trends, customer behavior, and high-value customers.
+An interactive Power BI dashboard was created to visualize key business insights.
 
-### 7.Data Export
-The final step exports two CSV files:
+### KPI Metrics
 
-- `Retail_Transactions_Enhanced.csv`  
-  → Cleaned and enriched transaction-level data
+The dashboard includes the following KPIs:
+- Total Revenue
+- Total Transactions
+- Average Transaction Value
+- Total Customers
+- Campaign Response Rate
 
-- `Retail_Customer_Analysis.csv`  
-  → Customer-level aggregated analysis data
+### Dashboard Visualizations
 
-These files can be reused for Excel dashboards and reporting.
+Revenue Trend: Monthly revenue trend across years
+
+Campaign Effectiveness: Comparison of spending between campaign responders and non-responders
+
+Customer Segmentation
+  Customers categorized as:
+  - Low Value
+  - Medium Value
+  - High Value
+
+Top Customers: Top 10 customers contributing to revenue
 
 ## Key Insights
-
-- A small percentage of customers contribute a significant portion of total revenue.
-- Customers who responded to campaigns generally spend more.
-- Clear patterns are visible in monthly sales trends.
-- High-value customers are crucial for revenue growth.
-
-## Output Files
-
-Retail_Transactions_Enhanced.csv
-→ Cleaned transaction-level dataset with additional features.
-
-Retail_Customer_Analysis.csv
-→ Customer-level aggregated analysis dataset.
-
-## How to Run
-
-1. Clone or download this repository.
-2. Open `retail_analysis.ipynb` in Jupyter Notebook.
-3. Run all cells sequentially.
-4. Generated CSV files will be saved in the project directory.
+1. Campaign responders show higher average transaction value, indicating positive campaign impact.
+2. A small segment of customers contributes a large portion of total revenue.
+3. Transaction trends reveal seasonal variations in revenue.
+4. Customer segmentation helps identify high-value customers for targeted marketing strategies.
 
 ## Conclusion
 This project demonstrates an end-to-end data analysis pipeline:
@@ -117,6 +105,7 @@ It showcases practical data analytics using Python and Pandas.
 
 ## License
 This project is created for educational and learning purposes.
+
 
 
 
